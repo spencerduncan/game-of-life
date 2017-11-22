@@ -45,7 +45,6 @@ class App extends React.Component<Props> {
   }
 
   renderBoard() {
-    console.log('Hello');
     const { grid, cellsByXy } = this.props;
     return (
       <div className="board">
@@ -68,7 +67,7 @@ class App extends React.Component<Props> {
     return (
       <div className="root">
       <p>
-        <code>click</code>: toggle cell state; &nbsp;
+        <code>click</code>: toggle cell state &nbsp;
         <button onClick={this.resetGame}>reset</button>
         <button onClick={this.runGame}>Run</button>
       </p>
@@ -81,7 +80,6 @@ class App extends React.Component<Props> {
 const mapStateToProps = (state: gameoflife.Game): StateProps => {
   const height = state.height;
   const width = state.width;
-  console.log('Hello.');
   const grid: string[][] = [];
   for (let y = 0; y < height; ++y) {
     grid[y] = [];

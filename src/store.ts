@@ -29,7 +29,6 @@ const defaultState = gameoflife.create({
 });
 
 export function root (prev: Game = defaultState, action: Action): Game {
-    console.log('hmmm');
     if (action.type === 'RESET_GAME') {
         return gameoflife.create(action.options);
     } else if ( prev.status !== GameStatus.Edit ) {

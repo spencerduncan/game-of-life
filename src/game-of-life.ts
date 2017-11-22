@@ -39,7 +39,6 @@ const neighborXys = ({ width, height }: Options, x: number, y: number): string[]
         (xys: string[], [dx, dy]) => {
             const xf = x + dx;
             const yf = y + dy;
-            console.log('hello');
             if ( xf > -1 && xf < width && yf > -1 && yf < height ) {
                 return xys.concat([xf, yf].toString());
             }
@@ -64,7 +63,6 @@ function createBoard(options: Options): Board {
             board.neighborsByXy[xy] = neighborXys(options, x, y);
         }
     }
-    console.log('hello');
     return board;
 }
 

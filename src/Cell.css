@@ -1,19 +1,19 @@
 .cell--alive {
   color: rgb(0, 0, 0);
   cursor: pointer;
-  border-radius: 1px;
+  border-radius: 0px;
   background-color: #231f20;
-  margin: 0px;
+  margin: 2px;
   padding: 0px;
   width: 40px;
   height: 40px;
 }
 .cell--dead {
-  color: #000;
+  color: #fff;
   cursor: pointer;
-  border-radius: 1px;
+  border-radius: 0px;
   background-color: #fff;
-  margin: 0px;
+  margin: 2px;
   padding: 0px;
   width: 40px;
   height: 40px;
